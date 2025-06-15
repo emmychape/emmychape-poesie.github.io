@@ -1,0 +1,71 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Archive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="archive-body">
+  <header class="archive-header">
+    <a href="index.html" class="back-button">← Retour</a>
+    <button id="deleteModeBtn" class="global-delete">Supprimer</button>
+  </header>
+
+  <main id="archiveGrid" class="grid-container"></main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close">✕</button>
+      <div id="modalSvgContainer"></div>
+      <button id="exportModalBtn" class="export-btn">Exporter SVG</button>
+    </div>
+  </div>
+
+  <script src="archive.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Archive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="archive-body">
+  <header class="archive-header">
+    <a href="index.html" class="back-button">← Retour</a>
+    <div style="display:flex; gap:10px;">
+      <button id="deleteModeBtn" class="global-delete">Mode multi-suppression</button>
+    </div>
+  </header>
+
+  <main id="archiveGrid" class="grid-container"></main>
+
+  <!-- MODAL POUR VOIR SVG EN PLEIN ÉCRAN -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close" aria-label="Fermer">✕</button>
+      <div id="modalSvgContainer"></div>
+      <button id="exportModalBtn" class="export-btn" aria-label="Exporter la composition">Exporter SVG</button>
+    </div>
+  </div>
+
+  <!-- MODAL POUR CONFIRMER LA SUPPRESSION INDIVIDUELLE -->
+  <div id="confirmDeleteModal" class="modal hidden">
+    <div class="modal-content" style="flex-direction: column; padding: 20px; max-width: 300px;">
+      <p style="margin-bottom: 20px;">Supprimer cette composition ?</p>
+      <div style="display:flex; gap:10px; justify-content: center;">
+        <button id="confirmDeleteYes" class="global-delete">Oui</button>
+        <button id="confirmDeleteNo" class="back-button">Non</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="archive.js"></script>
+</body>
+</html>
+>>>>>>> 5a61b99e66031fba8bea070f5f13d28e1de81a0a
